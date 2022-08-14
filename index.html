@@ -1,1 +1,15 @@
-<h1>Hello World!</h1>
+<script>
+        var elem = document.getElementById('view');
+        var command = document.getElementById('text').value;
+        child = document.createElement("p");
+        child.value = command;
+        elem.before(child);
+</script>
+
+<div id="view">
+
+
+</div>
+<input id="text" type="text">
+
+<a href="Resume.pdf" target="_blank">Download Resume</a>

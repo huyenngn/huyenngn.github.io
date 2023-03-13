@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
 
-body, button {
+body,
+button {
     font-family: 'JetBrains Mono', monospace;
     color: white;
     background: black;
     font-size: 1.2em;
 }
+
 a {
-    color: inherit;
+    color: rgb(0, 110, 255);
     text-decoration: none;
-} 
+}
 
 .text-centre {
     text-align: center;
@@ -17,7 +19,6 @@ a {
 
 header nav {
     position: fixed;
-    overflow: hidden;
     background: #303030;
     top: 0;
     left: 0;
@@ -26,49 +27,53 @@ header nav {
 
 header nav ul {
     list-style: none;
-    overflow: hidden;
     display: flex;
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
 }
+
 header nav ul li {
     padding: 0;
     flex-grow: 1;
     justify-content: space-evenly;
+    min-width: 0;
 }
+
 .select-p {
     background: rgb(255, 140, 0);
 }
 
 .select-c {
-    padding: 10px 10px 8px 10px;
+    padding: 10px 10px 5px 10px;
 }
 
-header nav ul li button {
-    width: 100%;
+header nav ul li a {
     border: none;
     outline: none;
+    background-color: black;
     color: white;
     display: block;
     text-align: center;
     padding: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-header nav ul li button:hover {
-    padding: 10px 10px 8px 10px;
+header nav ul li a:hover {
+    padding: 10px 10px 5px 10px;
 }
 
 article {
     margin: 5px;
     padding: 5px 0;
-    overflow: hidden;
     padding-top: 0px;
 }
 
 .title {
     padding: 5px;
-    overflow: hidden;
     margin: 0;
     font-weight: bolder;
 }
@@ -82,20 +87,18 @@ article h4 {
     margin: 0;
 }
 
+p>.user {
+    color: chartreuse;
+}
+
+p>.location {
+    color: rgb(0, 110, 255);
+}
+
 main {
     float: left;
-    padding-top: 50px;
-    max-width: 68%;
-}
-footer {
-    position: fixed;
-    background: #353535;
-    text-align: end;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 5px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    max-width: 100%;
     overflow: hidden;
-    margin: 0;
-    font-weight: bolder;
 }

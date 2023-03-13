@@ -12,37 +12,39 @@
         <header>
                 <nav role='navigation'>
                         <ul>
-                                <li class=" select-p"><button class=" select-c">Home</button></li>
-                                <li><button>About</button></li>
-                                <li><button>Projects</button></li>
-                                <li><button>Contact</button></li>
+                                <li class=" select-p"><a href="index.html" class=" select-c">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                         </ul>
                 </nav>
         </header>
         <main>
+                <article>
+                        <h1>Welcome to my portfolio website! &#x1F44B;</h1>
+                        <p>
+                                I am Huyen &#128587;&#127995; - a computer engineering student with a passion for embedded systems and programming &#x1F4BB;.<br>
+                                Throughout my studies, I have completed a variety of <a href="projects.html">projects</a> which I wish to showcase with this website as well as <a href="about.html">myself</a>.<br>
+                                Please &#x1F64F;&#xFE0F; take a moment to browse through my portfolio and feel free to <a href="contact.html">contact me</a> with any questions. I look forward to hearing from you!
+                        </p>
+                </article>
+                <article>
+                        <p><span class="user">huyen@nguyen:</span><a href="index.html">~</a>$ tree -a</p>
+                        <p>
+                                ├── about<br>
+                                │&emsp;&ensp;└── huyen_info.txt<br>
+                                │&emsp;&ensp;└── huyen_img.txt<br>
+                                ├── projects<br>
+                                │&emsp;&ensp;├── linux_typer.c<br>
+                                │&emsp;&ensp;├── twitter_bot.py<br>
+                                │&emsp;&ensp;├── ribbon_designer.js<br>
+                                └── contact<br>
+                        </p>
+                        <p>3 directories, 6 files
+                        </p>
+                        <p><span class="user">huyen@nguyen:</span><a href="index.html">~</a>$</p>
+                    </article>
         </main>
-        <footer>
-                <p>Basically, footer. <small>by me ;-D</small></p>
-        </footer>
-        <script>
-                const pages = ["home.html", "about.html", "projects.html", "contact.html"]
-                $("main").load("./home.html");
-                var header = document.querySelector("ul");
-                var elems = header.querySelectorAll("li");
-                pages.forEach(function(entry, i){
-                        elems[i].querySelector("button").addEventListener("click", function () {
-                                var current_p = document.getElementsByClassName("select-p")[0];
-                                var current_c = current_p.getElementsByClassName("select-c")[0];
-                                current_p.className = current_p.className.replace(" select-p", "");
-                                current_c.className = current_c.className.replace(" select-c", "");
-                                this.className += " select-c";
-                                this.parentElement.className += " select-p"
-                                console.log(i);
-                                console.log(entry);
-                                $("main").load(entry);
-                        });
-                });
-        </script>
 </body>
 
 </html>

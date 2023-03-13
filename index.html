@@ -1,15 +1,48 @@
-<script>
-        var elem = document.getElementById('view');
-        var command = document.getElementById('text').value;
-        child = document.createElement("p");
-        child.value = command;
-        elem.before(child);
-</script>
+<!doctype html>
+<html>
 
-<div id="view">
+<head>
+        <title>Huyen Nguyen</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="description" content="Portfolio homepage of Huyen Nguyen">
+        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
 
+<body>
+        <header>
+                <nav role='navigation'>
+                        <ul>
+                                <li class=" select-p"><button class=" select-c">Home</button></li>
+                                <li><button>About</button></li>
+                                <li><button>Projects</button></li>
+                                <li><button>Contact</button></li>
+                        </ul>
+                </nav>
+        </header>
+        <main>
+        </main>
+        <footer>
+                <p>Basically, footer. <small>by me ;-D</small></p>
+        </footer>
+        <script>
+                const pages = ["home.html", "about.html", "projects.html", "contact.html"]
+                $("main").load("./home.html");
+                var header = document.querySelector("ul");
+                var elems = header.querySelectorAll("li");
+                pages.forEach(function(entry, i){
+                        elems[i].querySelector("button").addEventListener("click", function () {
+                                var current_p = document.getElementsByClassName("select-p")[0];
+                                var current_c = current_p.getElementsByClassName("select-c")[0];
+                                current_p.className = current_p.className.replace(" select-p", "");
+                                current_c.className = current_c.className.replace(" select-c", "");
+                                this.className += " select-c";
+                                this.parentElement.className += " select-p"
+                                console.log(i);
+                                console.log(entry);
+                                $("main").load(entry);
+                        });
+                });
+        </script>
+</body>
 
-</div>
-<input id="text" type="text">
-
-<a href="Resume.pdf" target="_blank">Download Resume</a>
+</html>

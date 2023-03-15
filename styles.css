@@ -48,6 +48,11 @@ header nav ul li {
     padding: 10px 10px 5px 10px;
 }
 
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 header nav ul li a {
     border: none;
     outline: none;

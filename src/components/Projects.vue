@@ -68,7 +68,7 @@ export default {
                     technologies: ["C", "C++", "CMake", "FreeRTOS", "LVGL"],
                 },
                 {
-                    title: "📊 Smart Kitchen",
+                    title: "🍽️ Smart Kitchen",
                     text: "Bachelor Project Ambient Assisted Living",
                     github: "https://github.com/huyenngn/fridgeGPT",
                     git: "",

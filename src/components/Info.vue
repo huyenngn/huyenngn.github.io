@@ -27,7 +27,7 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Work Experience</template>
     <ul>
-      <li>Python Developement Intern at DB Netz AG 🚄</li>
+      <li>Python Developement Intern at DB Netz AG 🚄, 09/2023 entry</li>
     </ul>
   </InfoItem>
 

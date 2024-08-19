@@ -34,8 +34,8 @@ import SupportIcon from './icons/IconSupport.vue';
         <template #heading>Work Experience</template>
         <ul>
             <li>
-                Intern at
-                <span class="bold">DB Netz AG</span>
+                Working Student at
+                <span class="bold">DB InfraGo</span>
                 🚄, 09/2023 entry
             </li>
         </ul>

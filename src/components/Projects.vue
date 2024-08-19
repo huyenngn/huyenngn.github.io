@@ -53,7 +53,7 @@ export default {
             projects: [
                 {
                     title: "🚗 Autonomous LEGO Car",
-                    text: "A self-driving LEGO car that recognises road lanes and predicts the direction in which the car is turning.",
+                    text: "A self-driving LEGO car that utilises Computer Vision to recognise road lanes and predict the direction in which the road is turning.",
                     github: "",
                     git: "https://git.tu-berlin.de/sees-driving-1/raspberrypi",
                     link: "https://www.tu.berlin/sese/studium-lehre/studierendenprojeke\#c719986",
@@ -61,23 +61,15 @@ export default {
                 },
                 {
                     title: "📊 Real-time CSI Visualization Tool for ESP32",
-                    text: "A tool that senses and visualises how wireless signals travel through their surroundings in real-time.",
+                    text: "A tool that senses how wireless signals travel through their surroundings and visualises them in real-time on an ESP32.",
                     github: "https://github.com/huyenngn/CSI-Visualization-on-ESP32",
                     git: "",
                     link: "",
                     technologies: ["C", "C++", "CMake", "FreeRTOS", "LVGL"],
                 },
                 {
-                    title: "🍽️ Smart Kitchen",
-                    text: "Bachelor Project Ambient Assisted Living",
-                    github: "https://github.com/huyenngn/fridgeGPT",
-                    git: "",
-                    link: "",
-                    technologies: ["Python", "FastAPI", "Express.js", "SQLite", "Prisma", "Typescript", "Docker Compose"],
-                },
-                {
                     title: "💻 LinuxTyper",
-                    text: "An auto-typer for Linux that repeatedly executes keystrokes in any specified minimised or maximised window.",
+                    text: "A GUI auto-typer application for Linux that repeatedly executes keystrokes to any window including minimised ones!",
                     github: "https://github.com/huyenngn/linuxtyper",
                     git: "",
                     link: "",
@@ -85,7 +77,7 @@ export default {
                 },
                 {
                     title: "🤖 Twitter Bot",
-                    text: "A Python script that automatically replies to my favourite Thai actor’s tweets with their English translations.",
+                    text: "A Python script that automatically replies to my favourite Thai actor’s tweets with their English translations using Google Cloud Services and hosted on AWS.",
                     github: "https://github.com/huyenngn/TwitterBot",
                     git: "",
                     link: "",
@@ -93,7 +85,7 @@ export default {
                 },
                 {
                     title: "🎀 Ribbon Designer",
-                    text: "A web-based text editor, created for florists to design funeral ribbons.",
+                    text: "A web-based document editor, specialised for florists to design funeral ribbons.",
                     github: "https://github.com/huyenngn/RibbonDesigner",
                     git: "",
                     link: "https://tranquil-taffy-c57164.netlify.app/",

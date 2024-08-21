@@ -2,7 +2,7 @@
     <div class="skills">
         <label v-for="tech in technologies">
             <input type="checkbox" class="filter">
-            <div class="button" @click="filterCategory(tech)">{{ tech }}</div>
+            <div class="button" @click="filterCategory(tech)" :innerHTML="tech"></div>
         </label>
         <label>
             <input type="button">

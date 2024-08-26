@@ -2,10 +2,10 @@
     <Filter @filter-projects="updateFilterList" :technologies="getTechnologies()" />
     <transition name="fade" tag="div">
         <div v-if="toggle">
-            <Item v-for="(project, index) in filteredProjects" :key="index" :project="project" class="card"></Item>
+            <Item v-for="(project, index) in filteredProjects" :key="index" :project="project"></Item>
         </div>
         <div v-else>
-            <Item v-for="(project, index) in filteredProjects" :key="index" :project="project" class="card"></Item>
+            <Item v-for="(project, index) in filteredProjects" :key="index" :project="project"></Item>
         </div>
     </transition>
 </template>
@@ -53,19 +53,19 @@ export default {
                     title: "🚗 Autonomous LEGO Car",
                     text: "A self-driving LEGO car that utilises Computer Vision to recognise road lanes and predict the direction in which the road is turning. This was part of a Software Engineering Project course at TU Berlin.",
                     links: ["https://www.tu.berlin/sese/studium-lehre/studierendenprojeke\#c719986"],
-                    technologies: ["C", "C++", "CMake", "OpenCV"],
+                    technologies: ["C", "C++", "CMake", "OpenCV", "Raspberry Pi"],
                 },
                 {
                     title: "💻 LinuxTyper",
                     text: "A GUI auto-typer application for Linux that repeatedly executes keystrokes in a given time interval to any window - even minimised ones!",
                     links: ["https://github.com/huyenngn/linuxtyper"],
-                    technologies: ["C", "CMake", "GTK"],
+                    technologies: ["C", "CMake", "GTK", "Bash"],
                 },
                 {
                     title: "🤖 Twitter Bot",
-                    text: "A Python script that automatically replies to my favourite Thai actor’s tweets with their English translations using Google Cloud Services, hosted with AWS. It also translates text in images!",
+                    text: "A Python script that automatically replies to my favourite Thai actor’s tweets with their English translations using the Twitter API and Google Cloud Services, hosted with AWS. It also translates text in images!",
                     links: ["https://github.com/huyenngn/TwitterBot"],
-                    technologies: ["Python", "Javascript", "Google Cloud", "Docker", "AWS"],
+                    technologies: ["Python", "Javascript", "REST API", "Google Cloud", "Docker", "AWS"],
                 },
                 {
                     title: "📊 Real-time CSI Visualization Tool for ESP32",
@@ -92,17 +92,6 @@ export default {
 </script>
 
 <style>
-.card {
-    min-width: 0;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid var(--color-border);
-}
-
-.card:last-of-type {
-    border-bottom: 0;
-}
-
 .fade-enter-active {
     animation: fade .5s;
 }

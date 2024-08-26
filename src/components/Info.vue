@@ -1,10 +1,11 @@
 <script setup>
+import Experience from './Experience.vue';
 import InfoItem from './InfoItem.vue';
 import Projects from './Projects.vue';
-import DocumentationIcon from './icons/IconDocumentation.vue';
-import ToolingIcon from './icons/IconTooling.vue';
 import CommunityIcon from './icons/IconCommunity.vue';
+import DocumentationIcon from './icons/IconDocumentation.vue';
 import SupportIcon from './icons/IconSupport.vue';
+import ToolingIcon from './icons/IconTooling.vue';
 </script>
 
 <template>
@@ -32,13 +33,7 @@ import SupportIcon from './icons/IconSupport.vue';
             <ToolingIcon />
         </template>
         <template #heading>Work Experience</template>
-        <ul>
-            <li>
-                Working Student at
-                <span class="bold">DB InfraGo</span>
-                🚄, 09/2023 entry
-            </li>
-        </ul>
+        <Experience />
     </InfoItem>
 
     <InfoItem id="projects">
@@ -56,9 +51,7 @@ import SupportIcon from './icons/IconSupport.vue';
         <template #heading>Contact</template>
         <li>
             <span class="bold">E-mail: </span>
-            <a href="mailto:nganhuyennguyenthi@gmail.com"
-                >nganhuyennguyenthi@gmail.com</a
-            >
+            <a href="mailto:nganhuyennguyenthi@gmail.com">nganhuyennguyenthi@gmail.com</a>
         </li>
     </InfoItem>
 </template>

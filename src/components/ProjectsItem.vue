@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="card">
         <h4>{{ project.title }}</h4>
         <div>{{ project.text }}</div>
         <div class="technologies">
@@ -14,9 +14,7 @@
                 </div>
             </a>
         </div>
-
     </div>
-
 </template>
 
 <script>
@@ -37,10 +35,25 @@ export default {
 </script>
 
 <style scoped>
+.card {
+    min-width: 0;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.card:last-of-type {
+    border-bottom: 0;
+}
+
 .technologies {
     display: flex;
     flex-wrap: wrap;
     margin: 1em auto;
+}
+
+.card:last-of-type .technologies {
+    margin-bottom: 0;
 }
 
 h4 {

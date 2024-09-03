@@ -33,10 +33,10 @@
 
 <script>
 import ThemeSwitch from './ThemeSwitch.vue';
+import IconCross from './icons/IconCross.vue';
 import IconMoon from './icons/IconMoon.vue';
 import IconSun from './icons/IconSun.vue';
 import IconTheme from './icons/IconTheme.vue';
-import IconCross from './icons/IconCross.vue';
 
 export default {
     name: "NavBar",
@@ -182,5 +182,12 @@ nav ul li:last-of-type {
     nav ul {
         display: none;
     }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
 }
 </style>

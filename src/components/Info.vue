@@ -49,9 +49,19 @@ import ToolingIcon from './icons/IconTooling.vue';
             <CommunityIcon />
         </template>
         <template #heading>Contact</template>
-        <li>
-            <span class="bold">E-mail: </span>
-            <a href="mailto:nganhuyennguyenthi@gmail.com">nganhuyennguyenthi@gmail.com</a>
-        </li>
+        <ul>
+            <li>
+                <span class="bold">E-mail: </span>
+                <a href="mailto:nganhuyennguyenthi@gmail.com">nganhuyennguyenthi@gmail.com</a>
+            </li>
+            <li>
+                <span class="bold">LinkedIn: </span>
+                <a href="https://www.linkedin.com/in/huyen-nguyen-468213243/">Huyen Nguyen</a>
+            </li>
+            <li>
+                <span class="bold">GitHub: </span>
+                <a href="https://github.com/huyenngn">huyenngn</a>
+            </li>
+        </ul>
     </InfoItem>
 </template>

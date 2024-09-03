@@ -59,4 +59,10 @@ export default {
 label>input {
     display: none;
 }
+
+@media print {
+    .skills {
+        display: none;
+    }
+}
 </style>

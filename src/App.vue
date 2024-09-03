@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Info from './components/Info.vue'
-import Header from './components/Header.vue'
-import NavBar from './components/NavBar.vue'
+import Header from './components/Header.vue';
+import Info from './components/Info.vue';
+import NavBar from './components/NavBar.vue';
 
 export default {
     name: "App",
@@ -61,6 +61,12 @@ main {
     main {
         padding: 0;
         max-width: 700px;
+    }
+}
+
+@media print {
+    main {
+        padding-top: 1rem;
     }
 }
 </style>

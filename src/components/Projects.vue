@@ -39,8 +39,11 @@ export default {
     },
     computed: {
         filteredProjects() {
+            if (this.filterList.length === 0) {
+                return this.projects;
+            }
             return this.projects.filter((project) =>
-                this.filterList.every(tech => project.technologies.includes(tech))
+                this.filterList.some(tech => project.technologies.includes(tech))
             );
         },
     },

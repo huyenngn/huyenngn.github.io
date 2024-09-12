@@ -53,10 +53,10 @@ export default {
             filterList: [],
             projects: [
                 {
-                    title: "🚗 Autonomous LEGO Car",
-                    text: "A self-driving LEGO car that utilises Computer Vision to recognise road lanes and predict the direction in which the road is turning. This was part of a Software Engineering Project course at TU Berlin.",
-                    links: ["https://www.tu.berlin/sese/studium-lehre/studierendenprojeke\#c719986"],
-                    technologies: ["C", "C++", "CMake", "OpenCV", "Raspberry Pi"],
+                    title: "✨ First and only Ô Ăn Quan AI",
+                    text: "A Vietnamese traditional board game, Ô Ăn Quan, with an AI that uses the Minimax algorithm with Alpha-Beta pruning and Reinforcement Learning to play against human players. CI/CD to Google Compute Engine with GitHub Actions.This was part of my Bachelor's Thesis at TU Berlin.",
+                    links: ["https://github.com/huyenngn/OAnQuan-AI", "http://35.239.5.44/"],
+                    technologies: ["Python", "PyTorch", "OpenAI Gym", "Stable Baselines", "FastAPI", "Javascript", "Vue.js", "HTML", "CSS", "Docker", "GCP", "GitHub Actions", "CI/CD"],
                 },
                 {
                     title: "💻 LinuxTyper",
@@ -65,10 +65,16 @@ export default {
                     technologies: ["C", "CMake", "GTK", "Bash"],
                 },
                 {
+                    title: "🚗 Autonomous LEGO Car",
+                    text: "A self-driving LEGO car that utilises Computer Vision to recognise road lanes and predict the direction in which the road is turning. This was part of a Software Engineering Project course at TU Berlin.",
+                    links: ["https://www.tu.berlin/sese/studium-lehre/studierendenprojeke\#c719986"],
+                    technologies: ["C", "C++", "CMake", "OpenCV", "Raspberry Pi", "Bluetooth"],
+                },
+                {
                     title: "🤖 Twitter Bot",
-                    text: "A Python script that automatically replies to my favourite Thai actor’s tweets with their English translations using the Twitter API and Google Cloud Services, hosted with AWS. It also translates text in images!",
+                    text: "A Python script that automatically replies to my favourite Thai actor’s tweets with their English translations using the Twitter API. Implemented text and image translation with Google's Vision API and Cloud Translation API, hosted with AWS.",
                     links: ["https://github.com/huyenngn/TwitterBot"],
-                    technologies: ["Python", "Javascript", "REST API", "Google Cloud", "Docker", "AWS"],
+                    technologies: ["Python", "Javascript", "Docker", "REST API", "GCP", "AWS"],
                 },
                 {
                     title: "📊 Real-time CSI Visualization Tool for ESP32",
@@ -77,15 +83,15 @@ export default {
                     technologies: ["C", "C++", "CMake", "FreeRTOS", "LVGL"],
                 },
                 {
-                    title: "🎀 Ribbon Designer",
+                    title: "🎀 Ribbon Studio",
                     text: "A web-based document editor, specialised for florists to design funeral ribbons. Initially I made it with Bootstrap, then I rewrote it with Vanilla CSS and Javascript.",
-                    links: ["https://github.com/huyenngn/RibbonDesigner", "https://tranquil-taffy-c57164.netlify.app/"],
+                    links: ["https://github.com/huyenngn/Ribbon-Studio", "https://tranquil-taffy-c57164.netlify.app/"],
                     technologies: ["Javascript", "Vue.js", "HTML", "CSS"],
                 },
                 {
                     title: "🌐 Portfolio Website",
                     text: "This Website.",
-                    links: ["https://github.com/huyenngn/resume", "https://huyenngn.github.io/"],
+                    links: ["https://github.com/huyenngn/huyenngn.github.io", "https://huyenngn.github.io/"],
                     technologies: ["Javascript", "Vue.js", "HTML", "CSS"],
                 },
             ],

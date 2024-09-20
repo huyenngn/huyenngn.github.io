@@ -54,9 +54,9 @@ export default {
             projects: [
                 {
                     title: "✨ First and only Ô Ăn Quan AI",
-                    text: "A Vietnamese traditional board game, Ô Ăn Quan, with an AI that uses the Minimax algorithm with Alpha-Beta pruning and Reinforcement Learning to play against human players. CI/CD to Google Compute Engine with GitHub Actions.This was part of my Bachelor's Thesis at TU Berlin.",
-                    links: ["https://github.com/huyenngn/OAnQuan-AI", "http://35.239.5.44/"],
-                    technologies: ["Python", "PyTorch", "OpenAI Gym", "Stable Baselines", "FastAPI", "Javascript", "Vue.js", "HTML", "CSS", "Docker", "GCP", "GitHub Actions", "CI/CD"],
+                    text: "A Vietnamese traditional board game, Ô Ăn Quan, as a web game with an AI that uses the Minimax algorithm with Alpha-Beta pruning and Reinforcement Learning to play against human players. CI/CD to Google Compute Engine with GitHub Actions.",
+                    links: ["https://github.com/huyenngn/OAnQuan-AI", "https://huyenngn.github.io/oanquan"],
+                    technologies: ["Python", "PyTorch", "OpenAI Gym", "Stable Baselines", "FastAPI", "Javascript", "Vue.js", "HTML", "CSS", "SQL", "Supabase", "Docker", "Google Cloud Services", "GitHub Actions", "CI/CD"],
                 },
                 {
                     title: "💻 LinuxTyper",
@@ -74,7 +74,7 @@ export default {
                     title: "🤖 Twitter Bot",
                     text: "A Python script that automatically replies to my favourite Thai actor’s tweets with their English translations using the Twitter API. Implemented text and image translation with Google's Vision API and Cloud Translation API, hosted with AWS.",
                     links: ["https://github.com/huyenngn/TwitterBot"],
-                    technologies: ["Python", "Javascript", "Docker", "REST API", "GCP", "AWS"],
+                    technologies: ["Python", "Javascript", "Docker", "REST API", "Google Cloud Services", "AWS"],
                 },
                 {
                     title: "📊 Real-time CSI Visualization Tool for ESP32",

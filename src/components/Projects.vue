@@ -56,7 +56,7 @@ export default {
                     title: "✨ First and only Ô Ăn Quan AI",
                     text: "A Vietnamese traditional board game, Ô Ăn Quan, as a web game with an AI that uses the Minimax algorithm with Alpha-Beta pruning and Reinforcement Learning to play against human players. CI/CD to Google Compute Engine with GitHub Actions.",
                     links: ["https://github.com/huyenngn/OAnQuan-AI", "https://huyenngn.github.io/oanquan"],
-                    technologies: ["Python", "PyTorch", "OpenAI Gym", "Stable Baselines", "FastAPI", "Javascript", "Vue.js", "HTML", "CSS", "SQL", "Supabase", "Docker", "Google Cloud Services", "GitHub Actions", "CI/CD"],
+                    technologies: ["Python", "PyTorch", "FastAPI", "Javascript", "Vue.js", "HTML", "CSS", "SQL", "Supabase", "Docker", "Google Cloud Services", "GitHub Actions", "CI/CD"],
                 },
                 {
                     title: "💻 LinuxTyper",

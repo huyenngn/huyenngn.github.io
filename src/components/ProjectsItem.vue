@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <h4>{{ project.title }}</h4>
-        <div>{{ project.text }}</div>
+        <div :innerHTML="project.text"></div>
         <div class="technologies">
             <div class="technology" v-for="tech in project.technologies" :innerHTML="tech">
             </div>

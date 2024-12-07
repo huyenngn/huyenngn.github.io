@@ -1,24 +1,5 @@
 <template>
-    <div id="modal" class="invisible">
-        <div class="closebtn">
-            <IconCross @click="toggleSettings()" />
-        </div>
-        <div>
-            <span>Switch Theme</span>
-            <ThemeSwitch @toggleTheme="toggleTheme()" :theme="this.theme" />
-        </div>
-        <div>
-            <span>Use user theme</span>
-            <label class="switch" :class="{ userActive: this.userChecked }">
-                <input type="checkbox" @change="toggleUser()" :checked="this.userChecked">
-                <span class="slider">
-                </span>
-            </label>
-        </div>
-
-    </div>
     <nav role='navigation'>
-        <IconTheme id="theme-settings" @click="toggleSettings()" />
         <ul>
             <li v-for="link in links">
                 <a :href="'#' + link.id" @click="scrollIntoView($event, link.id)">{{ link.text }}</a>
@@ -49,52 +30,26 @@ export default {
     data() {
         return {
             theme: "",
-            userChecked: false,
         };
     },
     mounted() {
         let localTheme = localStorage.getItem("theme");
-        if (localTheme == "userMode") {
-            this.userChecked = true;
-            if (window.matchMedia && screen && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                this.theme = "darkMode";
-                document.documentElement.setAttribute("data-theme", "darkMode");
-            }
-            else {
-                this.theme = "lightMode";
-                document.documentElement.setAttribute("data-theme", "lightMode");
-            }
-            return 0;
+        if (localTheme == "darkMode" || localTheme == "lightMode") {
+            this.theme = localTheme;
         }
-        this.theme = localTheme;
-        document.documentElement.setAttribute("data-theme", localTheme);
-        return 0;
+        else if (window.matchMedia && screen && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            this.theme = "darkMode";
+        }
+        else {
+            this.theme = "lightMode";
+        }
+        document.documentElement.setAttribute("data-theme", this.theme);
     },
     methods: {
         toggleTheme() {
-            this.userChecked = false;
             this.theme = this.theme == "darkMode" ? "lightMode" : "darkMode";
             document.documentElement.setAttribute("data-theme", this.theme);
             localStorage.setItem("theme", this.theme);
-        },
-        toggleSettings() {
-            let cl = document.getElementById("modal").classList;
-            if (cl.contains("invisible")) {
-                cl.remove("invisible");
-            }
-            else {
-                cl.add("invisible");
-            }
-        },
-        toggleUser() {
-            this.userChecked = this.userChecked ? false : true;
-            localStorage.setItem("theme", "userMode");
-            if (window.matchMedia && screen && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                document.documentElement.setAttribute("data-theme", "darkMode");
-            }
-            else {
-                document.documentElement.setAttribute("data-theme", "lightMode");
-            }
         },
         scrollIntoView(e, id) {
             e.preventDefault();
@@ -112,19 +67,11 @@ export default {
     ;
 }
 
-#theme-settings {
+nav {
     display: none;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 0;
-    right: 0;
-    padding: 1rem 1rem;
-    font-size: 1.125rem;
-}
+
 
 nav ul {
     list-style: none;
@@ -168,19 +115,15 @@ nav ul li:last-of-type {
     cursor: pointer;
 }
 
-@media (max-width: 992px) {
-    #theme-settings {
-        display: block;
-        cursor: pointer;
-    }
-
+@media (min-width: 1024px) {
     nav {
+        display: flex;
+        justify-content: flex-end;
         position: relative;
-        padding: 10px 10px;
-    }
-
-    nav ul {
-        display: none;
+        top: 0;
+        right: 0;
+        padding: 1rem 1rem;
+        font-size: 1.125rem;
     }
 }
 

@@ -48,13 +48,7 @@ export default {
 main {
     margin: 0 auto;
     width: 100%;
-    padding: 0 2rem;
-}
-
-@media (min-width: 720px) {
-    main {
-        max-width: 600px;
-    }
+    padding: 2.5rem 2rem;
 }
 
 @media (min-width: 1024px) {
